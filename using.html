@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+  <head>
+    <title>WEB - CSS</title>
+    <meta charset="utf-8">
+    <style>
+        body{
+          margin:0px;
+          padding: 20px;
+        }
+        h1{
+          font-size:45px;
+          text-align: center;
+          border-bottom: 2px solid black;
+          margin:0px;
+          padding: 20px;
+        }
+        ol{
+          border-right: 2px solid black;
+          width: 100px;
+          margin:0px;
+          padding: 20px;
+        }
+        #grid #article{
+          padding-left:25px;
+        }
+        #grid ol{
+          padding-left:33px;
+        }
+        #grid{
+          display: grid;
+          grid-template-columns: 150px 1fr;
+        }
+        @media (max-width:800px) {
+          #grid{
+            display: block;
+          }
+          ol{
+            border-right: none;
+          }
+          h1{
+            border-bottom: none;
+          }
+        }
+      </style>
+  </head>
+  <body>
+    <h1>CSS</h1>
+    <div id="grid">
+      <ol>
+        <li><a href="/html">HTML</a></li>
+        <li><a href="/css">CSS</a></li>
+        <li><a href="/js">JavaScript</a></li>
+      </ol>
+      <p id="article">
+        Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language.[1] Although most often used to set the visual style of web pages and user interfaces written in HTML and XHTML, the language can be applied to any XML document, including plain XML, SVG and XUL, and is applicable to rendering in speech, or on other media. Along with HTML and JavaScript, CSS is a cornerstone technology used by most websites to create visually engaging webpages, user interfaces for web applications, and user interfaces for many mobile applications.
+      </p>
+    </div>
+  </body>
+</html>
